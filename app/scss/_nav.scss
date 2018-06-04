@@ -1,0 +1,39 @@
+#main-nav {
+	transition: all 0.4s;
+	
+	#navbarNav{
+		text-transform: uppercase;
+	}
+	
+	a {
+		color: #ffffff;
+		transition: all 0.4s;
+		
+		&:hover {
+			color: $sky-blue;
+		}
+	}
+	
+	a#logo {
+		font-family: DroidSerif;
+		font-style: italic;
+		
+		&:hover {
+			color: #ffffff;
+		}
+	}
+	
+	&.scrolled {
+		background-color: rgba(14, 216, 214, 0.8);
+		
+		a {
+			color: $black;
+			
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	
+}
+

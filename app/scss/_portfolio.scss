@@ -1,0 +1,70 @@
+@import 'mixins';
+
+#portfolio {
+	background-color: $white;
+
+	.portfolio-item {
+		background-color: #fff;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		overflow: hidden;
+
+		.cover {
+			height: 300px;
+			overflow: hidden;
+
+			.background-container {
+				height: 100%;
+				@include background-center;
+				transition: all 0.4s;
+
+				&.image1 {
+					background-image: url(../img/portfolio/box_of_cookies.jpg);
+				}
+
+				&.image2 {
+					background-image: url(../img/portfolio/chaotic_paint.jpg);
+				}
+
+				&.image3 {
+					background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+				}
+
+				&.image4 {
+					background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+				}
+
+				&.image5 {
+					background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+				}
+
+				&.image6 {
+					background-image: url(../img/portfolio/typing_on_laptop.jpg);
+				}
+
+				.mask {
+					height: 100%;
+					opacity: 0;
+					@include flex-center;
+					transition: all 0.4s;
+
+					.fa {
+						color: #ffffff;
+						font-size: 36px;
+					}
+				}
+			}
+
+
+			&:hover .background-container {
+				transform: scale(1.5);
+			}
+
+			&:hover .mask {
+				background-color: rgba(14, 216, 214, 0.6);
+				opacity: 1;
+			}
+		}
+
+	}
+}

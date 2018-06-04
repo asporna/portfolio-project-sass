@@ -1,0 +1,305 @@
+body {
+    color: #777777;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav, h1, h2, h3, h4, h5, h6, button, figcaption {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin: 30px auto;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.socials a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.socials a:hover {
+    background-color: #0ed8d6;
+}
+
+#main-nav {
+    transition: all 0.4s;
+}
+
+#main-nav #navbarNav {
+    text-transform: uppercase;
+}
+
+#main-nav a {
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
+#main-nav a:hover {
+    color: #0ed8d6;
+}
+
+#main-nav a#logo {
+    font-family: DroidSerif;
+    font-style: italic;
+}
+
+#main-nav a#logo:hover {
+    color: #ffffff;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.8);
+}
+
+#main-nav.scrolled a {
+    color: #333333;
+}
+
+#main-nav.scrolled a:hover {
+    color: #fff;
+}
+
+#main-header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header/pictures_on_the_wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-header .header-inner {
+    text-align: center;
+}
+
+#main-header .header-inner h1, #main-header .header-inner h2 {
+    color: #ffffff;
+}
+
+#main-header .header-inner h1 {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+section {
+    text-align: center;
+    padding: 60px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+section p {
+    margin-bottom: 40px;
+}
+
+#services .fa {
+    font-size: 56px;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    background-color: #0ed8d6;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#services .fa:hover {
+    background-color: #ffffff;
+    color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    transform: rotate(360deg);
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio .portfolio-item {
+    background-color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-item .cover {
+    height: 300px;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-item .cover .background-container {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+}
+
+#portfolio .portfolio-item .cover .background-container.image1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container.image2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container.image3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container.image4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container.image5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container.image6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#portfolio .portfolio-item .cover .background-container .mask {
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+#portfolio .portfolio-item .cover .background-container .mask .fa {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+#portfolio .portfolio-item .cover:hover .background-container {
+    transform: scale(1.5);
+}
+
+#portfolio .portfolio-item .cover:hover .mask {
+    background-color: rgba(14, 216, 214, 0.6);
+    opacity: 1;
+}
+
+#team .team-member {
+    margin-bottom: 40px;
+}
+
+#team .team-member figure {
+    margin-bottom: 20px;
+}
+
+#team .team-member figure img {
+    border-radius: 50%;
+}
+
+#team .team-member figure figcaption {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/footer/world-map.jpg");
+}
+
+#contact .section-header {
+    color: #ffffff;
+}
+
+#contact form .input-container, #contact form textarea {
+    height: 200px;
+}
+
+#contact form ::placeholder {
+    text-transform: uppercase;
+}
+
+#contact form .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact form input, #contact form textarea {
+    border: none;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    box-shadow: 0 0 2px 2px #0ed8d6;
+}
+
+#contact form textarea {
+    width: 100%;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+#footer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+}
+
+#footer p, #footer .socials {
+    height: 50px;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer nav ul li {
+    display: inline-block;
+    margin: auto 5px;
+}

@@ -1,0 +1,78 @@
+@import 'colors&fonts';
+
+@media all and (max-width: 991px) {
+	#main-nav, #main-nav.scrolled {
+		background-color: #fff;
+		text-align: center;
+		border-bottom: 1px solid $sky-blue;
+		
+	}
+	
+	#main-nav {
+		
+		 a#logo, a, &.scrolled a {
+			color: $black;
+			 
+			 &:hover {
+				 color: $sky-blue;
+			 }
+		}
+	}
+	
+	section {
+		padding:  80px 30px;
+		
+		h3 {
+			font-size: 20px;
+		}
+		
+	}
+	
+	
+	
+	
+	
+}
+
+@media all and (max-width: 768px) {
+	
+	.btn {
+		margin: 15px auto;
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+	
+	body {
+		font-size: 14px;
+	}
+	
+	#main-header {
+		 
+		.header-inner {
+			
+			h1 {
+				font-size: 28px;
+			}
+			
+			h2 {
+				font-size: 18px;
+			}
+		}
+	}
+	
+	#team {
+		.team-member {
+			margin-bottom: 60px;
+		}
+	}
+	
+	#contact {
+		form {
+			textarea {
+				margin-top: 30px;
+			}
+		}
+	}
+	
+	
+}

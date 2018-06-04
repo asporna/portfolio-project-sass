@@ -1,0 +1,23 @@
+@import 'mixins';
+
+#main-header {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url('../img/header/pictures_on_the_wall.jpg');
+	@include background-center;
+	color: #ffffff;
+	@include flex-center;
+	
+	.header-inner {
+		text-align: center;
+		
+		h1, h2 {
+			color: #ffffff;
+		}
+		
+		h1 {
+			font-size: 52px;
+			font-weight: 800;
+		}
+	}
+}

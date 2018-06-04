@@ -1,0 +1,24 @@
+#services {
+
+	.fa {
+		font-size: 56px;
+		color: #ffffff;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		margin-bottom: 20px;
+		background-color: $sky-blue;
+		border-radius: 50%;
+		transition: all 0.5s;
+
+		&:hover {
+			background-color: #ffffff;
+			color: $sky-blue;
+			border: 1px solid $sky-blue;
+			transform: rotate(360deg);
+		}
+	}
+
+
+
+}

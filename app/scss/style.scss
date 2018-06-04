@@ -1,0 +1,86 @@
+@import 'colors&fonts';
+
+body {
+	color: $base-color;
+	font-family: $base-font, serif;
+	margin: 0;
+	padding: 0;
+}
+
+#main-nav,h1,h2,h3,h4,h5,h6,button,figcaption {
+	font-family: 'Montserrat', sans-serif;
+	color: $black;
+
+}
+
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.btn {
+	color: #ffffff;
+	background-color: $sky-blue;
+	border: 1px solid $sky-blue;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	margin: 30px auto;
+	transition: all 0.4s;
+
+}
+
+.btn:hover {
+	background-color: #ffffff;
+	color: #000;
+}
+
+.socials a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	background-color: $darker-black;
+	color: #ffffff;
+	border-radius: 50%;
+	margin: 0 10px;
+
+	&:hover {
+		background-color: $sky-blue;
+	}
+}
+
+@import 'nav';
+@import 'header';
+
+section {
+	text-align: center;
+	padding: 60px;
+	
+	h2 {
+		margin-bottom: 30px;
+	}
+	
+	h3 {
+		font-size: 24px;
+		margin-top: 10px;
+
+	}
+	
+	p {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+
+@import 'services';
+@import 'portfolio';
+@import 'team';
+@import 'contact';
+@import 'footer';
+
+
+
